@@ -46,6 +46,7 @@ extensions = [
     'recommonmark',
     'sphinx_rtd_theme',
     'sphinx_materialdesign_theme',
+	'sphinxcontrib.bibtex',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -127,7 +128,7 @@ html_theme_options = {
 
     # Render title in header.
     # Values: True, False (Default: False)
-    'show_header_title': False,
+    'show_header_title': True,
     # Render title in drawer.
     # Values: True, False (Default: True)
     'show_drawer_title': True,
@@ -150,7 +151,9 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-
+# html_sidebars = {
+#    '**': ['globaltoc.html']
+# }
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
