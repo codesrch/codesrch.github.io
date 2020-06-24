@@ -8,13 +8,16 @@ Welcome to Building Intelligent Agents's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Introduction
+   
+   chapter_introduction/index
+   chapter_robotics/index
+   chapter_robotics/dataset
+   chapter_reference/index
 
+.. Indices and tables
+.. ==================
 
+.. * :ref:`genindex`
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`search`
