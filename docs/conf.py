@@ -103,8 +103,8 @@ html_theme_options = {
     # https://material.io/icons/
     'header_links' : [
         ('Home', 'index', False, 'home'),
-        ("ExternalLink", "http://mmasud.me/", True, 'launch'),
-        ("NoIconLink", "http://mmasud.me/", True, ''),
+        ("Homepage", "http://mmasud.me/", True, 'launch'),
+        # ("NoIconLink", "http://mmasud.me/", True, ''),
         ("GitHub", "https://github.com/masud99r/building-intelligent-agent", True, 'link')
     ],
 
