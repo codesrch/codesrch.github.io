@@ -16,7 +16,15 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-\
+import sys,os
 
+pardir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print(pardir)
+sys.path.append(pardir)
+
+from sphinx_materialdesign_theme  import __version__
 # -- Project information -----------------------------------------------------
 
 project = 'Building Intelligent Agent'
@@ -44,13 +52,13 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'recommonmark',
-    'sphinx_rtd_theme',
-    'sphinx_materialdesign_theme',
+    # 'sphinx_rtd_theme',
+    # 'sphinx_materialdesign_theme',
 	'sphinxcontrib.bibtex',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+# templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -83,7 +91,7 @@ pygments_style = None
 # a list of builtin themes.
 #
 html_theme = 'sphinx_materialdesign_theme' # sphinx_materialdesign_theme, sphinx_rtd_theme, alabaster
-html_theme_path = ["_themes", ]
+# html_theme_path = ["_themes", ]
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -114,9 +122,9 @@ html_theme_options = {
     #
     # Values: amber, blue, brown, cyan deep_orange, deep_purple, green, grey, indigo, light_blue,
     #         light_green, lime, orange, pink, purple, red, teal, yellow(Default: indigo)
-    'primary_color': 'indigo',
+    'primary_color': 'blue',
     # Values: Same as primary_color. (Default: pink)
-    'accent_color': 'pink',
+    'accent_color': 'deep_orange',
 
     # Customize layout.
     # For details see link.
@@ -124,7 +132,7 @@ html_theme_options = {
     'fixed_drawer': True,
     'fixed_header': True,
     'header_waterfall': True,
-    'header_scroll': False,
+    'header_scroll': True,
 
     # Render title in header.
     # Values: True, False (Default: False)
@@ -151,10 +159,11 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-# html_sidebars = {
-#    '**': ['globaltoc.html']
-# }
-
+html_sidebars = {
+   '**': ['globaltoc.html']
+}
+# html_favicon = '_static/favicon.ico'
+# html_logo = '_static/logo.svg'
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.

@@ -11,9 +11,10 @@ Welcome to Building Intelligent Agents's documentation!
    :caption: Introduction
    
    chapter_introduction/index
-   chapter_proposal/proposal
+   chapter_background/index
+   chapter_proposal/index
    chapter_robotics/index
-   chapter_robotics/dataset
+..    chapter_robotics/dataset
    chapter_reference/index
 
 .. Indices and tables
