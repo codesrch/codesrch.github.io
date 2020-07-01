@@ -27,7 +27,7 @@ sys.path.append(pardir)
 from sphinx_materialdesign_theme  import __version__
 # -- Project information -----------------------------------------------------
 
-project = 'Building Intelligent Agent'
+project = 'Intelligent Agent'
 copyright = '2020, Masudur Rahman'
 author = 'Masudur Rahman'
 
@@ -113,7 +113,7 @@ html_theme_options = {
         ('Home', 'index', False, 'home'),
         ("Homepage", "http://mmasud.me/", True, 'launch'),
         # ("NoIconLink", "http://mmasud.me/", True, ''),
-        ("GitHub", "https://github.com/masud99r/building-intelligent-agent", True, 'link')
+        ("GitHub", "https://github.com/masud99r", True, 'link')
     ],
 
     # Customize css colors.
@@ -167,7 +167,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'BuildingIntelligentAgentdoc'
+htmlhelp_basename = 'IntelligentAgentdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -194,7 +194,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'BuildingIntelligentAgent.tex', 'Building Intelligent Agent Documentation',
+    (master_doc, 'IntelligentAgent.tex', 'Intelligent Agent Documentation',
      'Masudur Rahman', 'manual'),
 ]
 
@@ -204,7 +204,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'buildingintelligentagent', 'Building Intelligent Agent Documentation',
+    (master_doc, 'intelligentagent', 'Intelligent Agent Documentation',
      [author], 1)
 ]
 
@@ -215,8 +215,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'BuildingIntelligentAgent', 'Building Intelligent Agent Documentation',
-     author, 'BuildingIntelligentAgent', 'One line description of project.',
+    (master_doc, 'IntelligentAgent', 'Intelligent Agent Documentation',
+     author, 'IntelligentAgent', 'One line description of project.',
      'Miscellaneous'),
 ]
 

@@ -22,3 +22,5 @@ Artificial Intelligence for Scientific Discovery
 
 - Leverage existing scientic knowledge to advance the scientic discovery.
 - Build autonomous agents to discover new knowledge and thus improve the boundary of basic and advance science.
+
+Conferences: https://2020.midl.io/
