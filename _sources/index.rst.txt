@@ -13,6 +13,7 @@ Welcome to Building Intelligent Agents's documentation!
    chapter_introduction/index
    chapter_background/index
    chapter_proposal/index
+   chapter_reinforcement-learning/index
    chapter_robotics/index
    chapter_reference/index
 
