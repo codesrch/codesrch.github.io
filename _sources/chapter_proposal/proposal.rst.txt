@@ -1,6 +1,5 @@
 Research Proposal
 ==================
--------------------------------------------------
 
 Generalization remains one of the most fundamental challenges 
 in reinforcement learning and agents often overfit to large 
@@ -16,8 +15,8 @@ to the different environments. We will use the Progen OpenAI environment to demo
 Progen consists of 16 different environments with different action sets and a diverse environment, thus challenging. 
 We will develop an algorithm to demonstrate the generalization of reinforcement learning.
 
-Artificial Intelligence for Scientific Discovery
 -------------------------------------------------
+Artificial Intelligence for Scientific Discovery
 -------------------------------------------------
 
 - Leverage existing scientic knowledge to advance the scientic discovery.
