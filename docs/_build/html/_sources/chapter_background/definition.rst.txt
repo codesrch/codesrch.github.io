@@ -2,6 +2,58 @@
 Definition
 ======================
 
+Categorical Distribution
+	Used for discrete action of reinforcement learning.
+	"In probability theory and statistics, a categorical distribution 
+	(also called a generalized Bernoulli distribution, multinoulli distribution) 
+	is a discrete probability distribution that describes the possible results of a 
+	random variable that can take on one of K possible categories, with the probability 
+	of each category separately specified. The K-dimensional categorical distribution is 
+	the most general distribution over a K-way event; any other discrete distribution over 
+	a size-K sample space is a special case. The parameters specifying the probabilities of 
+	each possible outcome are constrained only by the fact that each must be in the range 0 
+	to 1, and all must sum to 1." [wikipedia]
+
+Markov Chain
+
+Markov Decision Process
+
+Partially Observed Markov Decision Process
+ 
+Some Points about RL:
+======================
+- RL task is defined in terms of reward function.
+
+Goal of reinforcement learning:
+--------------------------------
+:math:`p_{\theta}(s_1, a_1, .., S_T, a_T)=p_{\theta}(\tau)= p(s_1)\prod_{t=1}^T\pi_{\theta}(a_t|s_t)p(s_{t+1}|s_t, a_t)`.
+
+The states and actions are randomly distributed, so we have to take expectation of this reward under their distribution under the trajectory, :math:`p_{\theta}(\tau)`, induced by the initial state and the transition dynamics of the MDP and the current policy :math:`\pi_\theta`. 
+:math:`\theta^* = {argmax}_{\theta} 
+E_{\tau \sim p_{\theta}(\tau)}[\sum_t r(s_t, a_t)]`  
+
+State-action marginal
+	:math:`p_\theta(s_t, a_t)` at time :math:`t`.  
+
+Q(quality)-function:
+	Q-function depend on the policy(:math:`\pi`) , thus :math:`Q^{\pi}`.
+
+	:math:`Q^{\pi}(s_t, a_t)=\sum_{t'=t}^T E_{\pi_\theta}[r(s_{t'}, a_{t'})|s_t,a_t]`. total reward from taking :math:`a_t` in :math:`s_t`.   
+
+	In many RL setting evaluating this quantity exactly is usually intractable, and thus in practice we approximate this quantity. Expectation can be estimated through samples and there are many ways to sampling.
+
+Value Function:
+	:math:`V_\pi(s_t)=\sum_{t'=t}^T E_{\pi_\theta}[r(s_{t'}, a_{t'})|s_t]` 
+
+
+
+
+
+
+
+
+
+
 Confirmation Bias
 	A tendency to seize upon information that confirms our preferred position or initial hypothesis. 
 
@@ -22,4 +74,3 @@ TensorBoard
 
 .. _TensorBoard: https://www.tensorflow.org/tensorboard
 .. _within Pytorch framework: https://pytorch.org/docs/stable/tensorboard.html
-

@@ -21,6 +21,7 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../_static/sphinx_materialdesign_theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -192,9 +193,46 @@ Show Source
   <div class="section" id="definition">
 <h1>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h1>
 <dl class="simple">
+<dt>Categorical Distribution</dt><dd><p>Used for discrete action of reinforcement learning.
+“In probability theory and statistics, a categorical distribution
+(also called a generalized Bernoulli distribution, multinoulli distribution)
+is a discrete probability distribution that describes the possible results of a
+random variable that can take on one of K possible categories, with the probability
+of each category separately specified. The K-dimensional categorical distribution is
+the most general distribution over a K-way event; any other discrete distribution over
+a size-K sample space is a special case. The parameters specifying the probabilities of
+each possible outcome are constrained only by the fact that each must be in the range 0
+to 1, and all must sum to 1.” [wikipedia]</p>
+</dd>
+</dl>
+<p>Markov Chain</p>
+<p>Markov Decision Process</p>
+<p>Partially Observed Markov Decision Process</p>
+<div class="section" id="some-points-about-rl">
+<h2>Some Points about RL:<a class="headerlink" href="#some-points-about-rl" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>RL task is defined in terms of reward function.</p></li>
+</ul>
+<div class="section" id="goal-of-reinforcement-learning">
+<h3>Goal of reinforcement learning:<a class="headerlink" href="#goal-of-reinforcement-learning" title="Permalink to this headline">¶</a></h3>
+<p><span class="math notranslate nohighlight">\(p_{\theta}(s_1, a_1, .., S_T, a_T)=p_{\theta}(\tau)= p(s_1)\prod_{t=1}^T\pi_{\theta}(a_t|s_t)p(s_{t+1}|s_t, a_t)\)</span>.</p>
+<p>The states and actions are randomly distributed, so we have to take expectation of this reward under their distribution under the trajectory, <span class="math notranslate nohighlight">\(p_{\theta}(\tau)\)</span>, induced by the initial state and the transition dynamics of the MDP and the current policy <span class="math notranslate nohighlight">\(\pi_\theta\)</span>.
+<span class="math notranslate nohighlight">\(\theta^* = {argmax}_{\theta}
+E_{\tau \sim p_{\theta}(\tau)}[\sum_t r(s_t, a_t)]\)</span></p>
+<dl>
+<dt>State-action marginal</dt><dd><p><span class="math notranslate nohighlight">\(p_\theta(s_t, a_t)\)</span> at time <span class="math notranslate nohighlight">\(t\)</span>.</p>
+</dd>
+<dt>Q(quality)-function:</dt><dd><p>Q-function depend on the policy(<span class="math notranslate nohighlight">\(\pi\)</span>) , thus <span class="math notranslate nohighlight">\(Q^{\pi}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(Q^{\pi}(s_t, a_t)=\sum_{t'=t}^T E_{\pi_\theta}[r(s_{t'}, a_{t'})|s_t,a_t]\)</span>. total reward from taking <span class="math notranslate nohighlight">\(a_t\)</span> in <span class="math notranslate nohighlight">\(s_t\)</span>.</p>
+<p>In many RL setting evaluating this quantity exactly is usually intractable, and thus in practice we approximate this quantity. Expectation can be estimated through samples and there are many ways to sampling.</p>
+</dd>
+<dt>Value Function:</dt><dd><p><span class="math notranslate nohighlight">\(V_\pi(s_t)=\sum_{t'=t}^T E_{\pi_\theta}[r(s_{t'}, a_{t'})|s_t]\)</span></p>
+</dd>
 <dt>Confirmation Bias</dt><dd><p>A tendency to seize upon information that confirms our preferred position or initial hypothesis.</p>
 </dd>
 </dl>
+</div>
+</div>
 </div>
 <div class="section" id="library-and-tools">
 <h1>Library and Tools<a class="headerlink" href="#library-and-tools" title="Permalink to this headline">¶</a></h1>
@@ -218,7 +256,13 @@ Tensorboard can be used <a class="reference external" href="https://pytorch.org/
       <span class="caption-text">Table Of Contents</span>
     </p>
     <ul>
-<li><a class="reference internal" href="#">Definition</a></li>
+<li><a class="reference internal" href="#">Definition</a><ul>
+<li><a class="reference internal" href="#some-points-about-rl">Some Points about RL:</a><ul>
+<li><a class="reference internal" href="#goal-of-reinforcement-learning">Goal of reinforcement learning:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a class="reference internal" href="#library-and-tools">Library and Tools</a></li>
 </ul>
 
