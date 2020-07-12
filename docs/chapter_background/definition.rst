@@ -26,9 +26,10 @@ Some Points about RL:
 
 Goal of reinforcement learning:
 --------------------------------
-:math:`p_{\theta}(s_1, a_1, .., S_T, a_T)=p_{\theta}(\tau)= p(s_1)\prod_{t=1}^T\pi_{\theta}(a_t|s_t)p(s_{t+1}|s_t, a_t)`.
+:math:`p_{\theta}(s_1, a_1, .., s_T, a_T)=p_{\theta}(\tau)= p(s_1)\prod_{t=1}^T\pi_{\theta}(a_t|s_t)p(s_{t+1}|s_t, a_t)`.
 
 The states and actions are randomly distributed, so we have to take expectation of this reward under their distribution under the trajectory, :math:`p_{\theta}(\tau)`, induced by the initial state and the transition dynamics of the MDP and the current policy :math:`\pi_\theta`. 
+
 :math:`\theta^* = {argmax}_{\theta} 
 E_{\tau \sim p_{\theta}(\tau)}[\sum_t r(s_t, a_t)]`  
 
@@ -40,11 +41,23 @@ Q(quality)-function:
 
 	:math:`Q^{\pi}(s_t, a_t)=\sum_{t'=t}^T E_{\pi_\theta}[r(s_{t'}, a_{t'})|s_t,a_t]`. total reward from taking :math:`a_t` in :math:`s_t`.   
 
-	In many RL setting evaluating this quantity exactly is usually intractable, and thus in practice we approximate this quantity. Expectation can be estimated through samples and there are many ways to sampling.
+	In many RL settings evaluating this quantity exactly is usually intractable, and thus in practice we approximate this quantity. Expectation can be estimated through samples and there are many ways to sampling.
 
 Value Function:
 	:math:`V_\pi(s_t)=\sum_{t'=t}^T E_{\pi_\theta}[r(s_{t'}, a_{t'})|s_t]` 
 
+	:math:`V_\pi(s_t)=E_{a_t \sim \pi(a_t|s_t)}[Q^\pi(s_t, a_t)]`
+
+	Value function is the average of Q-value at a stage (intuitively).
+Final RL Objective:
+	:math:`E_{s_1 \sim p(s_1)}[V^\pi(s_1)]` 
+
+Fixed Point Iteration:
+	Q-learning usages fixed point iteration. In numerical analysis, fixed-point iteration is a method of computing fixed points of iterated functions[wikipedia].
+
+Multi-variate normal distributed
+
+	
 
 
 
