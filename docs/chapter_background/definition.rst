@@ -57,9 +57,28 @@ Fixed Point Iteration:
 
 Multi-variate normal distributed
 
+Impotance sampling
+
+Monte Carlo policy evaluation:
+
+Bootstrapped Estimate:
+
+	
+
+ 
+RL Algorithms
+==============
+REINFORCE 
+
+
 	
 
 
+Model-based RL
+===============
+
+Plan
+	Sequence of actions
 
 
 
