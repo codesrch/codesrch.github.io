@@ -12,18 +12,13 @@ MEASURING THE RELIABILITY OF REINFORCEMENT LEARNING ALGORITHMS (ICML-2020)
 
 CURL: Contrastive Unsupervised Representations for Reinforcement Learning (ICML 2020)
 ----------------------------------------------------------------------------------------
-"We present CURL: Contrastive Unsupervised
-Representations for Reinforcement Learning.
-CURL extracts high-level features from raw pixels using contrastive learning and performs offpolicy control on top of the extracted features.
-CURL outperforms prior pixel-based methods,
-both model-based and model-free, on complex
-tasks in the DeepMind Control Suite and Atari
-Games showing 1.9x and 1.2x performance gains
-at the 100K environment and interaction steps
-benchmarks respectively. On the DeepMind Control Suite, CURL is the first image-based algorithm to nearly match the sample-efficiency of
-methods that use state-based features. Our code
-is open-sourced and available at https://www.
-github.com/MishaLaskin/curl."
+This paper :cite:`srinivas2020curl` shows how image-based features can be used to train RL agents efficiently. CURL first extract high-level features from raw pixels using contrastive learning and then performs off-policy control. CURL outperforms prior pixel-based methods on complex tasks in the DeepMind Control Suite and Atari Games showing performance gains. 
+
+A Distributional View on Multi-Objective Policy Optimization [ICML 2020] [MORL, RL]
+----------------------------------------------------------------------------------------
+This paper provides a distributional view of Multi-objective reinforcement learning (MORL) that enables the scale-invariant encoding of preferences. 
+Their theoretical grounding comes from considering RL as an inference perspective of MORL. In experiments, they show their model outperform scalarized approach on multi-objective tasks.
+
 ==================
 Evolution
 ==================
