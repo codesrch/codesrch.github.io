@@ -63,7 +63,8 @@ Monte Carlo policy evaluation:
 
 Bootstrapped Estimate:
 
-	
+Generalized Advantage Estimation:
+		
 
  
 RL Algorithms

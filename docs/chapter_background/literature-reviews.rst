@@ -16,16 +16,40 @@ This paper :cite:`srinivas2020curl` shows how image-based features can be used t
 
 A Distributional View on Multi-Objective Policy Optimization [ICML 2020] [MORL, RL]
 ----------------------------------------------------------------------------------------
-This paper provides a distributional view of Multi-objective reinforcement learning (MORL) that enables the scale-invariant encoding of preferences. 
+This paper :cite:`abdolmaleki2020distributional` provides a distributional view of Multi-objective reinforcement learning (MORL) that enables the scale-invariant encoding of preferences. 
 Their theoretical grounding comes from considering RL as an inference perspective of MORL. In experiments, they show their model outperform scalarized approach on multi-objective tasks.
+
+Revisiting Fundamentals of Experience Replay [ICML 2020]
+----------------------------------------------------------------------------------------
+This paper :cite:`fedus2020revisiting` finds: Larger size experience replay substantially increase the performance
+of certain algorithms and leaving others unaffected, n-step returns are uniquely beneficial while other techniques confer
+limited benefit for sifting through larger memory.
+
+HIGH-DIMENSIONAL CONTINUOUS CONTROL USING GENERALIZED ADVANTAGE ESTIMATION [ICLR 2016]
+----------------------------------------------------------------------------------------
+This paper :cite:`Schulman2016HighDimensionalCC` address sample efficiency using value functions to reduce the variance of policy gradient estimates at the cost of some bias, using an exponential-weighted estimator of the advantage function that is analogous to TD(\lambda). 
+They usse trust region optimization proceduce to make the policy stable and make sure stable improvement despite nonstationarity of the incoming data.
+
+
+
+----------------------------------------------------------------------------------------
+
+
+
+
+----------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------------
+
 
 ==================
 Evolution
 ==================
 
-Evolutionary Reinforcement Learning for Sample-Efficient Multiagent
-Coordination (ICML 2020)
-----------------------------------------------------------------------
+Evolutionary Reinforcement Learning for Sample-Efficient Multiagent Coordination (ICML 2020)
+----------------------------------------------------------------------------------------------
 "We introduce Multiagent Evolutionary Reinforcement Learning (MERL), a split-level training platform that handles the two
 objectives separately through two optimization processes. An evolutionary algorithm maximizes
 the sparse team-based objective through neuroevolution on a population of teams. Concurrently, a gradient-based optimizer trains policies to only maximize the dense agent-specific rewards. The gradient-based policies are periodically added to the evolutionary population as a way of information transfer between the two optimization processes. This enables the evolutionary algorithm to use skills learned via the agent-specific rewards toward optimizing the global objective. Results demonstrate that MERL significantly outperforms state-of-the-art methods, such as MADDPG, on a number of difficult coordination benchmarks."
