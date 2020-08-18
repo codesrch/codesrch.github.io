@@ -23,3 +23,16 @@ Artificial Intelligence for Scientific Discovery
 - Build autonomous agents to discover new knowledge and thus improve the boundary of basic and advance science.
 
 Conferences: https://2020.midl.io/
+
+
+Robotic surgery, work done, building system, but use model-based. Task dependent. RL used in robotics but applying them in surgery is difficult because long horizon and safety concern. Also data in surgery is scare thus tough to generate data (environment) for all type of surgical procedure. 
+Masudur want to build RL algorithm that is workable in long horizon, - demonstrated RL applicability in long horizon task, Tower of Hanoi - similar to surgical procedure, used for training.
+Now Masudur want to build algorithm that can perform safely by incorporating constraints into RL agent ( safety assurance). Still tackling long-horizon is a challenges thus developing algorithm that can work better in long-horizon tasks. (extension of tower hanoi - better, without given plan).
+Another challenge is generalizability across the environment - thus Masudur is working on to build RL algo that can work better (feasibility, make RL usable for the safety-critical system (surgery)). Procgen, bsuite environment for testing. 
+Challenge:
+Log-horizon
+Safety critical
+Generalizability
+
+The proposed algorithm will help to make RL usable in the safety-critical domain and the newly proposed algorithm will improve the state of the art of RL research.
+
