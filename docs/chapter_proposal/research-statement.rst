@@ -68,3 +68,9 @@ We would like to investigate in this research area.
 - RL in Surgical Robotic [ongoing - toh]
 
 
+Reinforcement Learning and Fake news detection and solution. How human persepctive change because of imperfect observation. RL can help to understand.
+
+Turned out we solve a rather generic problem in forward and this can be used in many otheer application
+in real-world, such as space exploration, long-distance repair. Thus the RL approach (TOH) also applicable in 
+borader sense. From revised manuscript response comment: "The proposed formulation is generic and can be extended for applications such as repairs on ISS,Lunar Landers, Mars Rovers.  The surgeme based communication protocol will reduce the length of messagessent and in turn reduce the redundancy requirements for the complex error correction codes required for deepspace communications and would bring down the latency.  Additional applications might involve repairing un-derwater trans-ocean cables."
+A very practical application.
